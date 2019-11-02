@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {timer} from 'rxjs';
+import {Howl, Howler } from 'howler';
 
 @Component({
   selector: 'app-root',
@@ -42,12 +43,27 @@ export class AppComponent {
 
   source = timer(1000, 500);
 
+  sound = new Howl({
+    src: ['assets/song/happy-birthday.mp3'],
+    autoplay: true,
+    loop: true,
+    html5: true,
+    omend: function() {
+      console.log("Finished");
+    }
+  });
+
 constructor() {
-    
+    console.log(this.sound)
+    this.sound.play();
     this.source.subscribe(val  => {
          this.colorSelected = this.colors[val];                    
     });
 
+
 }
+
+
+
 
 }

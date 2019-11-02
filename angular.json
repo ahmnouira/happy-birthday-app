@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "birth": {
+    "happy-birthday-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/birth",
+            "outputPath": "dist/happy-birthday-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "birth:build"
+            "browserTarget": "happy-birthday-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "birth:build:production"
+              "browserTarget": "happy-birthday-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "birth:build"
+            "browserTarget": "happy-birthday-app:build"
           }
         },
         "test": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "birth-e2e": {
+    "happy-birthday-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "birth:serve"
+            "devServerTarget": "happy-birthday-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "birth:serve:production"
+              "devServerTarget": "happy-birthday-app:serve:production"
             }
           }
         },
@@ -134,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "birth"
+  "defaultProject": "happy-birthday-app"
 }
