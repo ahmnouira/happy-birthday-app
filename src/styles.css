@@ -6,30 +6,26 @@
     font-style: italic;
     font-weight: bolder;
 }
-
-
 body {
     background-color: #f7f1e3;
     margin: 10px;
+      
 }
-
-
-#h1 {
-
-    font-family: llcalig;
-    text-align: center;
-    margin-top: 50px;
-    
-    
+button{
+    font-family:llcalig;
 }
-
 h2 {
 
     font-family: llcalig;
     text-align: center;
     
 }
+#h1 {
 
+    font-family: llcalig;
+    text-align: center;
+    
+}
 #img {
     border: 2px solid black;
     display: block;
@@ -37,5 +33,21 @@ h2 {
     margin-right: auto;
     margin-bottom: auto;
     width: 300px;
-    height: 200px;
+    height: 150px;
 }
+#emojji-1 ,#emojji-2{
+    font-size: 45px;
+}
+/* fixed footer at the bottom */
+footer{
+    font-family: llcalig;
+    position:fixed;
+    bottom:0;
+    width: 100%;             
+}
+/* screen < 600px width */
+@media only screen and (max-width: 600px) {
+    footer {
+       position: relative;
+    }
+ }
