@@ -1,8 +1,12 @@
 # happy-birthday-app
+ 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=ahmnouira.happy-birthday-app)
 
-* This a funny happy birthday application hosted in the cloud using _[Zeit Now](https://zeit.co/home)_
+> This a funny happy birthday application hosted in the cloud using _[Zeit Now](https://zeit.co/home)_
 
 ## Overview 
+
+
 
 ![img](/img/main.png)
 
